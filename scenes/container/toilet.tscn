@@ -6,16 +6,18 @@
 [ext_resource type="Texture2D" uid="uid://cnwcsl2u6lgyc" path="res://graphics/objects/lid.png" id="4_ubjq4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t03ev"]
-radius = 105.437
+radius = 58.0086
 
 [node name="Toilet" instance=ExtResource("1_nu27y")]
 script = ExtResource("2_5x7os")
 
 [node name="BaseSprite" parent="." index="0"]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_mpk5b")
 
 [node name="LidSprite" parent="." index="1"]
 position = Vector2(0, 6)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_ubjq4")
 
 [node name="CollisionShape2D" parent="." index="2"]

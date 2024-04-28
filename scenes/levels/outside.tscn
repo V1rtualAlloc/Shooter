@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cbic8k0ahvr8h"]
+[gd_scene load_steps=19 format=3 uid="uid://cbic8k0ahvr8h"]
 
 [ext_resource type="PackedScene" uid="uid://b57jie224areb" path="res://scenes/levels/level.tscn" id="1_b07lo"]
 [ext_resource type="Texture2D" uid="uid://6eevd6167728" path="res://graphics/ground/stones.png" id="2_2s80q"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://twpmbyodlkny" path="res://scenes/houses/house.tscn" id="10_kv2r3"]
 [ext_resource type="PackedScene" uid="uid://ps13od7awul4" path="res://scenes/objects/steam_vent.tscn" id="11_njaik"]
 [ext_resource type="PackedScene" uid="uid://b4nqnraytu3fv" path="res://scenes/objects/light_fan_animation.tscn" id="12_7wqwf"]
+[ext_resource type="PackedScene" uid="uid://cjjkgx6u3ex1f" path="res://scenes/enemies/scout.tscn" id="15_1prer"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbhhw"]
 resource_name = "walls"
@@ -103,7 +104,10 @@ position = Vector2(133, 522)
 position = Vector2(-1252, 3120)
 frame_progress = 0.93108
 
-[node name="Player" parent="." index="5"]
+[node name="Scout" parent="Enemies" index="0" instance=ExtResource("15_1prer")]
+position = Vector2(1033, 772)
+
+[node name="Player" parent="." index="7"]
 z_index = 2
 position = Vector2(586, 230)
 
